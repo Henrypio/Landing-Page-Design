@@ -16,6 +16,26 @@ import slidenumber2 from "../../assets/slide-numbers2.png";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
+const PageContainer = styled.div`
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  flex: 1;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+  }
+`;
 const H1 = styled.h1`
     font-family: Roboto;
     font-size: 64px;
@@ -129,42 +149,44 @@ const H1 = styled.h1`
 
 const Gallery = () => {
   return (
-    <>
+    <PageContainer>
       <MainHeader />
 
-      <H1>
-        Photo <br /> <Span>Gallery</Span>
-      </H1>
-      <Div></Div>
-      <Imgdiv>
-        <Img src={gallery1} alt="gallery photo 1" />
-        <Img src={gallery2} alt="gallery photo 2" />
-        <Img src={gallery3} alt="gallery photo 3" />
-        <Img src={gallery4} alt="gallery photo 4" />
-        <Img src={gallery5} alt="gallery photo 5" />
-        <Img src={gallery6} alt="gallery photo 6" />
-        <Img src={gallery7} alt="gallery photo 7" />
-        <Img src={gallery8} alt="gallery photo 8" />
-        <Img src={gallery9} alt="gallery photo 9" />
-        <Img src={gallery10} alt="gallery photo 10" />
-      </Imgdiv>
-      <Numberandarrowdiv>
-        <div>
-          <img src={slidenumber2} alt="" />
-        </div>
+      <Content>
+        <H1>
+          Photo <br /> <Span>Gallery</Span>
+        </H1>
+        <Div></Div>
+        <Imgdiv>
+          <Img src={gallery1} alt="gallery photo 1" />
+          <Img src={gallery2} alt="gallery photo 2" />
+          <Img src={gallery3} alt="gallery photo 3" />
+          <Img src={gallery4} alt="gallery photo 4" />
+          <Img src={gallery5} alt="gallery photo 5" />
+          <Img src={gallery6} alt="gallery photo 6" />
+          <Img src={gallery7} alt="gallery photo 7" />
+          <Img src={gallery8} alt="gallery photo 8" />
+          <Img src={gallery9} alt="gallery photo 9" />
+          <Img src={gallery10} alt="gallery photo 10" />
+        </Imgdiv>
+        <Numberandarrowdiv>
+          <div>
+            <img src={slidenumber2} alt="" />
+          </div>
 
-        <Navigation>
-          <Button1>
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </Button1>
-          <Button>
-            <FontAwesomeIcon icon={faArrowRight} />
-          </Button>
-        </Navigation>
-      </Numberandarrowdiv>
+          <Navigation>
+            <Button1>
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </Button1>
+            <Button>
+              <FontAwesomeIcon icon={faArrowRight} />
+            </Button>
+          </Navigation>
+        </Numberandarrowdiv>
+      </Content>
 
       <MainFooter />
-    </>
+    </PageContainer>
   );
 };
 

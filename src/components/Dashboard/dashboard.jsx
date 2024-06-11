@@ -52,7 +52,7 @@ const Seconddiv = styled.div`
   `,
   Maindiv = styled.div`
     margin-top: 200px;
-    margin-left: 100px;
+    margin-left: 20px;
 
     @media (max-width: 768px) {
       margin-top: 50px;
@@ -304,7 +304,7 @@ const Seconddiv = styled.div`
     font-weight: 900;
     text-align: left;
     color: #f2f2f2;
-    margin-top: 0px;
+    margin-top: -25px;
 
     @media (max-width: 768px) {
       font-size: 100px;
@@ -321,12 +321,26 @@ const Seconddiv = styled.div`
     text-align: left;
     margin-top: 40px;
     color: #333333;
+    margin-bottom: -50px;
 
     @media (max-width: 768px) {
       font-size: 12px;
       text-align: left;
       line-height: 15px;
       margin-top: 0px;
+    }
+  `,
+  H5 = styled.h3`
+    text-align: left;
+    font-size: 64px;
+    font-family: Roboto;
+    font-weight: 300;
+    color: grey;
+    margin-top: -200px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+      text-align: left;
     }
   `,
   Imagediv = styled.div`
@@ -573,7 +587,7 @@ const Dashboard = () => {
         </Secondcontainer>
 
         <div>
-          <H3>Our Projects</H3>
+          <H5>Our Projects</H5>
           <Imagediv>
             <Image1 src={rectangleimage1} alt="Rectangle image 1" />
             <Image2 src={rectangleimage2} alt="Rectangle image 2" />
