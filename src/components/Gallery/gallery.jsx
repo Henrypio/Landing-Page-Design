@@ -23,19 +23,35 @@ const H1 = styled.h1`
     text-align: left;
     color: #bdbdbd;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 70px;
     margin-left: 100px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      text-align: left;
+      margin-left: 0;
+      margin-top: 50px;
+    }
   `,
   Span = styled.span`
     font-weight: 700;
     color: #333333;
+
+    @media (max-width: 768px) {
+      font-size: inherit;
+    }
   `,
-  Hr = styled.hr`
-    width: 92%;
+  Div = styled.div`
+    width: 85%;
     margin-left: 100px;
     margin-bottom: 20px;
     border: 1px solid #f2f2f2;
     color: #f2f2f2;
+
+    @media (max-width: 768px) {
+      width: 90%;
+      margin-left: 5%;
+    }
   `,
   Imgdiv = styled.div`
     display: grid;
@@ -43,22 +59,47 @@ const H1 = styled.h1`
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     margin-left: 100px;
+    margin-right: 100px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
   `,
   Img = styled.img`
     width: 100%;
     height: 30vh;
+
+    @media (max-width: 768px) {
+      height: auto;
+    }
   `,
   Numberandarrowdiv = styled.div`
     display: flex;
     margin-left: 100px;
     margin-top: 50px;
     margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
   `,
   Navigation = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100px;
+    margin-left: 50px;
     // margin-top: 100px;
+
+    @media (max-width: 768px) {
+      width: 80px;
+      align-items: center;
+      margin-left: 0;
+    }
   `,
   Button = styled.button`
     background: #f9f9f9;
@@ -66,17 +107,35 @@ const H1 = styled.h1`
     cursor: pointer;
     font-size: 20px;
     margin: 0px 10px;
+    color: #333333;
     border-radius: 0px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  `,
+  Button1 = styled.button`
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 0px;
+    color: #333333;
+    border: 2px solid #f2f2f2;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   `;
 
 const Gallery = () => {
   return (
     <>
       <MainHeader />
+
       <H1>
         Photo <br /> <Span>Gallery</Span>
       </H1>
-      <Hr />
+      <Div></Div>
       <Imgdiv>
         <Img src={gallery1} alt="gallery photo 1" />
         <Img src={gallery2} alt="gallery photo 2" />
@@ -95,14 +154,15 @@ const Gallery = () => {
         </div>
 
         <Navigation>
-          <Button>
+          <Button1>
             <FontAwesomeIcon icon={faArrowLeft} />
-          </Button>
+          </Button1>
           <Button>
             <FontAwesomeIcon icon={faArrowRight} />
           </Button>
         </Navigation>
       </Numberandarrowdiv>
+
       <MainFooter />
     </>
   );
