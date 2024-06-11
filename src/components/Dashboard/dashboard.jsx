@@ -263,7 +263,6 @@ const Seconddiv = styled.div`
 
     @media (max-width: 768px) {
       margin-top: 50px;
-      padding: 0 20px;
     }
   `,
   H3 = styled.h3`
@@ -286,6 +285,7 @@ const Seconddiv = styled.div`
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
+      margin-top: 0px;
       gap: 20px;
     }
   `,
@@ -310,7 +310,8 @@ const Seconddiv = styled.div`
       font-size: 100px;
       text-align: left;
       margin-bottom: 0px;
-      margin-left: 0px;
+      margin-left: -10px;
+      margin-right: 10px;
     }
   `,
   Letterpara1 = styled.p`
@@ -324,10 +325,10 @@ const Seconddiv = styled.div`
     margin-bottom: -50px;
 
     @media (max-width: 768px) {
-      font-size: 12px;
+      font-size: 14px;
       text-align: left;
-      line-height: 15px;
-      margin-top: 0px;
+      line-height: 20px;
+      margin-top: -80px;
     }
   `,
   H5 = styled.h3`
@@ -341,6 +342,7 @@ const Seconddiv = styled.div`
     @media (max-width: 768px) {
       font-size: 30px;
       text-align: left;
+      margin-top: 50px;
     }
   `,
   Imagediv = styled.div`
