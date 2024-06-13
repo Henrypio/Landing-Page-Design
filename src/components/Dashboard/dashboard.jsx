@@ -314,6 +314,22 @@ const Seconddiv = styled.div`
       margin-right: 10px;
     }
   `,
+  Numberpara11 = styled.p`
+    font-family: Roboto;
+    font-size: 200px;
+    font-weight: 900;
+    text-align: left;
+    color: #f2f2f2;
+    margin-top: -25px;
+
+    @media (max-width: 768px) {
+      font-size: 100px;
+      text-align: left;
+      margin-bottom: 0px;
+      margin-left: -100px;
+      margin-right: 0px;
+    }
+  `,
   Letterpara1 = styled.p`
     font-family: Roboto;
     font-size: 22px;
@@ -570,9 +586,9 @@ const Dashboard = () => {
 
           <Secondcontainerdiv>
             <Paradiv1>
-              <Numberpara1>1</Numberpara1>
+              <Numberpara11>1</Numberpara11>
               <Letterpara1>
-                Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.{" "}
+                Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
                 <br /> Sed efficitur, lectus et <br /> facilisis placerat.
               </Letterpara1>
             </Paradiv1>

@@ -25,7 +25,7 @@ const Nav = styled.nav`
     flex-direction: column;
     position: absolute;
     top: 50px;
-    right: 10px;
+    left: 120px;
     background: black;
     padding: 10px;
     border-radius: 5px;
@@ -85,8 +85,8 @@ const Hamburger = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
   }
 `;
 
