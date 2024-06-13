@@ -25,7 +25,7 @@ const Nav = styled.nav`
     flex-direction: column;
     position: absolute;
     top: 50px;
-    left: 120px;
+    left: 150px;
     background: black;
     padding: 10px;
     border-radius: 5px;
